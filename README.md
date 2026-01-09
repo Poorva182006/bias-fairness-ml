@@ -48,3 +48,19 @@ features. Additionally, class weighting was applied to account for
 imbalanced class distributions.
 
 
+
+--> Fairness Evaluation by Sex
+
+Fairness analysis was conducted with respect to the sensitive attribute
+'sex'. Although overall accuracy was higher for female instances, this
+metric was influenced by class imbalance in the dataset. Analysis of
+prediction behavior revealed substantial disparities across groups.
+
+The model predicted high income (>50K) for approximately 46% of male
+instances but only about 15% of female instances. Furthermore, among
+individuals who truly earned more than 50K, the true positive rate was
+lower for females (≈70%) than for males (≈85%). These results indicate
+violations of demographic parity and equal opportunity, suggesting that
+the model disproportionately favors male instances in high-income
+predictions.
+
